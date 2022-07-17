@@ -249,38 +249,6 @@ void top_menu(int id) {
   }
 }
 
-// void title() {
-//
-//   glLineWidth(3.0);
-//   glColor3f(1.0, 1.0, 1.0);
-//   glBegin(GL_LINE_LOOP);
-//   glVertex2f(10, 10);
-//   glVertex2f(10, 490);
-//   glVertex2f(490, 490);
-//   glVertex2f(490, 10);
-//   glEnd();
-//
-//   glColor3f(1.0, 1.0, 0.0);
-//   drawstring(80, 440, "Dayanand sagar academy of technology and management");
-//   glColor3f(1.0, 1.0, 0.0);
-//   drawstring(60, 400, "Under the guidance of prof. Raghu MT");
-//   glColor3f(1.0, 1.0, 0.0);
-//   drawstring(100, 360, "Computer Graphics & Visualization");
-//   glColor3f(1.0, 1.0, 1.0);
-//   drawstring(120, 320, "Topic:Boat simulation ");
-//   glColor3f(1.0, 1.0, 1.0);
-//   drawstring(100, 280, "Submitted by");
-//   glColor3f(1.0, 1.0, 0.0);
-//   drawstring(100, 260, "Nithin-1DT14CS057");
-//   glColor3f(1.0, 1.0, 0.0);
-//   drawstring(100, 240, "Nikhil-1DT14CS053");
-//   glColor3f(1.0, 1.0, 0.0);
-//   drawstring(100, 220, "VI CSE A");
-//   glColor3f(1.0, 1.0, 1.0);
-//   drawstring(60, 100, "Right click on Window for options");
-//   glFlush();
-// }
-
 void myInit1() {
   glClearColor(0.0, 0.0, 0.0, 0.0);
   glColor3f(0.0f, 0.0f, 0.0f);
@@ -289,11 +257,6 @@ void myInit1() {
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
 }
-
-// void display2(void) {
-//   glClear(GL_COLOR_BUFFER_BIT);
-//   title();
-// }
 
 int main(int argc, char **argv) {
   glutInit(&argc, argv);
@@ -313,11 +276,6 @@ int main(int argc, char **argv) {
   glutAddMenuEntry("quit", 1);
   glutAddSubMenu("color", sub_menu);
   glutAttachMenu(GLUT_RIGHT_BUTTON);
-  // glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-  // glutInitWindowPosition(600, 0);
-  // glutInitWindowSize(500, 500);
-  // glutCreateWindow("Front Sheet");
-  // glutDisplayFunc(display2);
   myInit1();
   glutMainLoop();
   return 0;

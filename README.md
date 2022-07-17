@@ -1,2 +1,2 @@
 to compile run
-	cc cg.c -lglut -lGL -lm -lGLU
+	cc boat-sim.c -lglut -lGL -lm -lGLU
