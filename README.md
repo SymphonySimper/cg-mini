@@ -1,4 +1,4 @@
-to compile run
+To compile, run
 
 ```sh
 cc boat-sim.c -lglut -lGL -lm -lGLU
